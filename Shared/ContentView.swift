@@ -36,7 +36,7 @@ struct ContentView: View {
                     .padding(10)
                     .foregroundColor(selected == "Home" ? Color(#colorLiteral(red: 0.3647058824, green: 0.2588235294, blue: 0.737254902, alpha: 1)) : .black)
                     .background(Color(#colorLiteral(red: 0.3647058824, green: 0.2588235294, blue: 0.737254902, alpha: 1)).opacity(selected == "Home" ? 0.3 : 0))
-                    .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                    .clipShape(Capsule())
 
                     
                     HStack(spacing: 15) {
@@ -57,7 +57,7 @@ struct ContentView: View {
                     .padding(12)
                     .foregroundColor(selected == "Likes" ? Color(#colorLiteral(red: 0.8274509804, green: 0.2862745098, blue: 0.6156862745, alpha: 1)) : .black)
                     .background(Color(#colorLiteral(red: 0.8274509804, green: 0.2862745098, blue: 0.6156862745, alpha: 1)).opacity(selected == "Likes" ? 0.3 : 0))
-                    .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                    .clipShape(Capsule())
                     
                     
                     HStack(spacing: 15) {
@@ -78,7 +78,7 @@ struct ContentView: View {
                     .padding(12)
                     .foregroundColor(selected == "Search" ? Color(#colorLiteral(red: 0.9294117647, green: 0.6509803922, blue: 0.07450980392, alpha: 1)) : .black)
                     .background(Color(#colorLiteral(red: 0.9294117647, green: 0.6509803922, blue: 0.07450980392, alpha: 1)).opacity(selected == "Search" ? 0.3 : 0))
-                    .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                    .clipShape(Capsule())
                     
                     
                     HStack(spacing: 15) {
@@ -99,7 +99,7 @@ struct ContentView: View {
                     .padding(12)
                     .foregroundColor(selected == "Profile" ? Color(#colorLiteral(red: 0.01568627451, green: 0.5294117647, blue: 0.6745098039, alpha: 1)) : .black)
                     .background(Color(#colorLiteral(red: 0.01568627451, green: 0.5294117647, blue: 0.6745098039, alpha: 1)).opacity(selected == "Profile" ? 0.3 : 0))
-                    .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                    .clipShape(Capsule())
                     
                 }
             }
